@@ -45,6 +45,7 @@ end
 
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
+Hoe.plugin :bundler
 hoe = Hoe.spec(GEM_NAME) do
   self.version = VERS
   developer AUTHOR, EMAIL

@@ -4,7 +4,7 @@ require 'config/hoe' if Object.const_defined? 'Hoe' # setup Hoe + all gem config
 require 'lib/rubyrep'
 require 'tasks/task_helper'
 
-Dir['tasks/**/*.rake'].each { |rake| load rake }
+#Dir['tasks/**/*.rake'].each { |rake| load rake }
 load 'sims/performance/performance.rake'
 
 desc "Creates the repository commit statistics"
